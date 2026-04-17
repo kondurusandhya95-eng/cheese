@@ -34,6 +34,32 @@ body {
   background: var(--card);
   border-right: 1px solid rgba(255,255,255,0.05);
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.sidebar nav {
+  flex: 1;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.logout-btn {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  color: #ff4d4d !important; /* Red for logout */
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 77, 77, 0.1) !important;
+  color: #ff4d4d !important;
 }
 
 .logo {
