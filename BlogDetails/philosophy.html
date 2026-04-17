@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Fromagerie — Artisan Cheese &amp; Charcuterie</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../global-css/navbar.css" />
+  <link rel="stylesheet" href="./philosophy.css" />
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <header class="navbar" id="navbar" role="banner">
+    <div class="nav-container">
+
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Maison <em>Fromagerie</em></span>
+      </a>
+
+      <ul class="nav-links" role="navigation" aria-label="Main navigation">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Home <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="../index.html">Home 1</a>
+            <a href="../home2/home2.html">Home 2</a>
+        </li>
+
+        <li class="nav-item"><a href="../about/about.html" class="nav-link">About</a></li>
+        <li class="nav-item dropdown">
+          <a href="../Services/service.html" class="nav-link">Services </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="../Blog/blog.html" class="nav-link">Blog </a>
+
+        </li>
+        <li class="nav-item"><a href="../Contact/Contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="../auth/Dashboard.html" class="nav-link"> Dashboard</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="rtlToggle" class="rtl-btn">rtl</button>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+
+
+        <a href="#" class="order-btn">Sign Up</a>
+        
+      </div>
+
+      
+      <div class="nav-mobile-group">
+        <button id="rtlToggle-navbar" class="rtl-btn" aria-label="Toggle RTL">RTL</button>
+        <button id="theme-toggle-mobile" class="theme-btn" aria-label="Toggle theme">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-drawer" id="mobileDrawer">
+
+  
+  <div class="mob-accordion">
+    <button class="mob-acc-toggle" data-target="mob-home">
+      Home <span>▾</span>
+    </button>
+    <div class="mob-acc-body" id="mob-home">
+      <a href="../index.html">Home 1</a>
+      <a href="../home2/home2.html">Home 2</a>
+    </div>
+  </div>
+
+  
+  <a href="../about/about.html" class="mob-link">About</a>
+  <a href="../Services/service.html" class="mob-link">Services</a>
+  <a href="../Blog/blog.html" class="mob-link">Blog</a>
+  <a href="../Contact/Contact.html" class="mob-link">Contact</a>
+  <a href="../auth/dashboard.html" class="mob-link">Dashboard</a>
+
+  
+  <div class="mob-actions">
+    <a href="../auth/signup.html" class="order-btn">Sign Up</a>
+  </div>
+
+</div>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<main>
+  
+  <section class="hero blog-detail-hero">
+    <div class="hero__bg">
+      <img src="./Images/alpine.jpg" class="hero__img hero-zoom-anim" alt="Alpine Pasture">
+    </div>
+    <div class="hero__overlay"></div>
+    
+    <div class="hero__content container">
+      <nav class="reveal-up" style="margin-bottom: 2.5rem;">
+        <a href="../Blog/Blog.html" class="btn-nav-small">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          Back to Journal
+        </a>
+      </nav>
+      <span class="hero__eyebrow reveal-up">Philosophical Study — No. 012</span>
+      <h1 class="hero__heading reveal-up">The Memory of the <em>Pasture</em></h1>
+      <p class="hero__sub reveal-up">Tracing the chemical signature of summer clover and wild herbs in the crystalline texture of our aged Gruyère.</p>
+      <div class="blog-meta reveal-up">
+        <div class="author-pill">
+          <img src="./Images/marc.jpg" alt="Marc-Antoine">
+          <span>Marc-Antoine Lefebvre</span>
+        </div>
+        <span class="date-tag">June 04, 2024</span>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="section story">
+    <div class="container">
+      <div class="story__inner">
+        <div class="story__content reveal-left">
+          <span class="section-eyebrow">The Botanical Connection</span>
+          <h2 class="section-heading">Liquid <em>Terroir</em></h2>
+          <p class="story__body">
+            When a herd grazes on high-altitude alpine pastures, they consume more than just grass. They ingest a complex botanical record of red clover, wild thyme, and mountain yarrow. These essential oils are fat-soluble, migrating directly from the pasture to the milk, and eventually, into the very paste of the cheese.
+          </p>
+          <div class="story__stats">
+            <div class="story__stat">
+              <span class="story__stat-num">3x</span>
+              <span class="story__stat-label">Beta-Carotene</span>
+            </div>
+            <div class="story__stat">
+              <span class="story__stat-num">1.8k</span>
+              <span class="story__stat-label">Min Altitude</span>
+            </div>
+          </div>
+        </div>
+        <div class="story__image-wrap reveal-right">
+          <div class="zoom-container">
+            <img src="./Images/wild herbs.jpg" class="story__img zoom-hover-effect" alt="Wild Herbs">
+          </div>
+          <div class="story__img-badge float-anim">
+            <span class="story__img-badge-num">100%</span>
+            <span>Natural<br>Flora</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section experience bg-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Technical Affinage</span>
+        <h2 class="section-heading">Crystalline <em>Complexity</em></h2>
+        <p>As the wheel ages, the pasture's memory crystallizes into specific sensory markers.</p>
+      </div>
+      <div class="exp-track">
+        <div class="exp-step reveal-up bounce-hover" style="--d: 0.1s;">
+          <div class="exp-step__icon">❆</div>
+          <h3 class="exp-step__title">Tyrosine</h3>
+          <p class="exp-step__desc">The amino acid crystals that provide the signature "crunch" in long-term maturation.</p>
+        </div>
+        <div class="exp-step reveal-up bounce-hover" style="--d: 0.2s;">
+          <div class="exp-step__icon">☼</div>
+          <h3 class="exp-step__title">Beta-Carotene</h3>
+          <p class="exp-step__desc">Natural pigments that give summer Alpage cheese its deep golden hue.</p>
+        </div>
+        <div class="exp-step reveal-up bounce-hover" style="--d: 0.3s;">
+          <div class="exp-step__icon">⬡</div>
+          <h3 class="exp-step__title">Lipid Profile</h3>
+          <p class="exp-step__desc">Fats that carry the aromatic high-notes of wild mountain thyme and clover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-rule"></div>
+    <div class="footer-newsletter">
+      <div class="footer-newsletter__copy">
+        <p class="footer-newsletter__eyebrow">The Affinage Letter</p>
+        <h2 class="footer-newsletter__heading">Seasonal finds, pairings &amp; stories from the cave.</h2>
+      </div>
+      <form class="footer-newsletter__form" onsubmit="return false;">
+        <input class="footer-newsletter__input" type="email" placeholder="your@email.com" aria-label="Email address"
+          autocomplete="email" />
+        <button class="footer-newsletter__btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-brand__logo">
+          <span class="footer-brand__icon">⬡</span>
+          <span class="footer-brand__wordmark">Maison <em>Fromagerie</em></span>
+        </a>
+        <p class="footer-brand__desc">Artisan cheeses and hand-crafted boards, sourced from small European dairies and
+          aged with care in our own caves since 2011.</p>
+      </div>
+      <nav>
+        <h3 class="footer-col__heading">Quick Links</h3>
+        <ul class="footer-col__links">
+          <li><a href="../index.html">Home 1</a></li>
+          <li><a href="../home2/home2.html">Home 2</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../Services/service.html">Services</a></li>
+          <li><a href="../Blog/blog.html">Blog</a></li>
+          <li><a href="../Contact/contact.html#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <nav>
+        <h3 class="footer-col__heading">Clients</h3>
+        <ul class="footer-col__links">
+          <li><a href="../auth/dashboard.html">Dashboard</a></li>
+          <li><a href="../auth/404.html">404 page</a></li>
+          <li><a href="../auth/comingsoon.html">Coming soon</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3 class="footer-col__heading">Visit Us</h3>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Artisanal Cheese And Charcuterie Company<br />Hyderabad</span>
+        </div>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <span>Mon–Fri 9am – 7pm<br />Sat 9am – 5pm · Sun Closed</span>
+        </div>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <span><a  class="__cf_email__">cheese@gmail.com</a></span>
+        </div>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.72a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span>+91 9986745657</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-bottom__copy">&copy; 2025 Maison <span>Fromagerie</span>. All rights reserved.</p>
+      <ul class="footer-bottom__links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+         <li><a href="#">Cookies</a></li>
+      </ul>
+
+    </div>
+  </footer>
+
+  
+  <script src="../global-js/navbar.js"></script>
+  <script src="./philosophy.js"></script>
+
+</body>
+
+</html>

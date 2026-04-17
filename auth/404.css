@@ -1,0 +1,115 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  background: var(--bg);
+  color: var(--text-body);
+  overflow: hidden;
+}
+body::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201,165,90,0.15), transparent);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulseBg 6s infinite ease-in-out;
+}
+
+@keyframes pulseBg {
+  0%,100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.2); }
+}
+
+.particles span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #c9a55a;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 10s linear infinite;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: var(--surface);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: var(--r-xl);
+  box-shadow: var(--sh-card);
+  text-align: center;
+  z-index: 2;
+}
+
+.code {
+  font-size: 100px;
+  color: #c9a55a;
+  margin: 0;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px rgba(201,165,90,0.3); }
+  to   { text-shadow: 0 0 25px rgba(201,165,90,0.8); }
+}
+
+.title {
+  font-family: var(--ff-script);
+  color: var(--text-head);
+}
+
+.redirect {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: var(--bg-card);
+  color: var(--text-head);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.primary {
+  background: #c9a55a;
+  color: black;
+  box-shadow: var(--sh-gold);
+}
+
+@media (max-width: 500px) {
+  .code { font-size: 70px; }
+  .actions { flex-direction: column; }
+}

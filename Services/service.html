@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Fromagerie — Artisan Cheese &amp; Charcuterie</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../global-css/navbar.css" />
+  <link rel="stylesheet" href="./service.css" />
+</head>
+
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <header class="navbar" id="navbar" role="banner">
+    <div class="nav-container">
+
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Maison <em>Fromagerie</em></span>
+      </a>
+
+      <ul class="nav-links" role="navigation" aria-label="Main navigation">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Home <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="../index.html">Home 1</a>
+            <a href="../home2/home2.html">Home 2</a>
+        </li>
+
+        <li class="nav-item"><a href="../about/about.html" class="nav-link">About</a></li>
+        <li class="nav-item dropdown">
+          <a href="../Services/service.html" class="nav-link">Services </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="../Blog/blog.html" class="nav-link">Blog </a>
+
+        </li>
+        <li class="nav-item"><a href="../Contact/Contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="../auth/Dashboard.html" class="nav-link"> Dashboard</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="rtlToggle" class="rtl-btn">rtl</button>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+        <a href="../auth/signup.html" class="order-btn">Sign Up</a>
+      </div>
+      <div class="nav-mobile-group">
+        <button id="rtlToggle-navbar" class="rtl-btn" aria-label="Toggle RTL">RTL</button>
+        <button id="theme-toggle-mobile" class="theme-btn" aria-label="Toggle theme">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-drawer" id="mobileDrawer">
+
+  <div class="mob-accordion">
+    <button class="mob-acc-toggle" data-target="mob-home">
+      Home <span>▾</span>
+    </button>
+    <div class="mob-acc-body" id="mob-home">
+      <a href="../index.html">Home 1</a>
+      <a href="../home2/home2.html">Home 2</a>
+    </div>
+  </div>
+
+  <a href="../about/about.html" class="mob-link">About</a>
+  <a href="../Services/service.html" class="mob-link">Services</a>
+  <a href="../Blog/blog.html" class="mob-link">Blog</a>
+  <a href="../Contact/Contact.html" class="mob-link">Contact</a>
+  <a href="../auth/dashboard.html" class="mob-link">Dashboard</a>
+
+ 
+  <div class="mob-actions">
+    <a href="../auth/signup.html" class="order-btn">Sign Up</a>
+  </div>
+
+</div>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<section class="hero-section" id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Artisan · Authentic · Exquisite</span>
+    <h1 class="hero-title">Our <em>Services</em></h1>
+    <p class="hero-sub">From hand-selected cave-aged wheels to bespoke charcuterie arrangements, every offering is crafted with the same devotion to provenance and flavour that defines Maison Fromagerie.</p>
+    <div class="hero-cta-row">
+      <a href="./service.html" class="btn-primary">Explore Services</a>
+      <a href="#story" class="btn-ghost">Our Story</a>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">Scroll</span>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-img-wrap">
+      <img src="./Images/service-hero.jpg" alt="Artisan cheese board" loading="eager" />
+      <div class="hero-img-badge">
+        <span class="badge-num">18+</span>
+        <span class="badge-txt">Varieties<br/>In Stock</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story-section" id="story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-imgs">
+        <div class="story-img-main reveal">
+          <img src="./Images/cheese-wheel.jpg" alt="Cheese wheel aging" loading="lazy" />
+        </div>
+        <div class="story-img-accent reveal">
+          <img src="./Images/char.jpg" alt="Charcuterie detail" loading="lazy" />
+        </div>
+        <div class="story-stat-card float-anim">
+          <span class="stat-n">30+</span>
+          <span class="stat-l">Years of Craft</span>
+        </div>
+      </div>
+      <div class="story-text reveal">
+        <span class="section-eyebrow">Our Philosophy</span>
+        <h2 class="section-title">A <em>Heritage</em> of Flavour</h2>
+        <p>Founded in the heart of the Loire Valley, Maison Fromagerie has spent three decades sourcing only the finest raw-milk cheeses and cured meats from small family producers across France, Italy and Spain.</p>
+        <p>Every wheel, every terrine, every cured slab arrives at our maison carrying a story — of terroir, of patience, of craft passed through generations.</p>
+        <div class="story-pillars">
+          <div class="pillar">
+            <span class="pillar-icon">🧀</span>
+            <div>
+              <strong>Provenance</strong>
+              <p>Direct from farm & cave</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">✦</span>
+            <div>
+              <strong>Craftsmanship</strong>
+              <p>Traditional methods only</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🌿</span>
+            <div>
+              <strong>Sustainability</strong>
+              <p>Ethical & eco-conscious</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">What We Offer</span>
+      <h2 class="section-title">Crafted <em>Experiences</em></h2>
+      <p class="section-desc">Six bespoke services, each a celebration of the finest dairy and charcuterie traditions.</p>
+    </div>
+    <div class="services-grid">
+
+     
+      <article class="service-card reveal" data-delay="0">
+        <div class="card-img-wrap">
+          <img src="./Images/artisan.jpg" alt="Artisan Cheese Selection" loading="lazy" />
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🧀</div>
+          <h3 class="card-title">Artisan Cheese Selection</h3>
+          <p class="card-desc">Curated collections of cave-aged, raw-milk and washed-rind cheeses sourced directly from certified producers across Europe.</p>
+          <ul class="card-features">
+            <li>Monthly seasonal rotation</li>
+            <li>Tasting notes included</li>
+            <li>Pairing recommendations</li>
+          </ul>
+          <a href="../ServiceDetail/artisan.html" class="card-btn">Discover More <span class="btn-arrow">→</span></a>
+        </div>
+      </article>
+
+   
+      <article class="service-card reveal" data-delay="1">
+        <div class="card-img-wrap">
+          <img src="./Images/charcuterie.jpg" alt="Charcuterie Board Curation" loading="lazy" />
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🥩</div>
+          <h3 class="card-title">Charcuterie Board Curation</h3>
+          <p class="card-desc">Bespoke grazing boards assembled by our artisans — featuring jamón ibérico, bresaola, pâtés, cornichons and house-made preserves.</p>
+          <ul class="card-features">
+            <li>Custom sizes 2–50 guests</li>
+            <li>Dietary adaptations</li>
+            <li>Branded boards available</li>
+          </ul>
+          <a href="../ServiceDetail/charcuterie.html" class="card-btn">Discover More <span class="btn-arrow">→</span></a>
+        </div>
+      </article>
+
+    
+      <article class="service-card reveal" data-delay="2">
+        <div class="card-img-wrap">
+          <img src="./Images/private.jpg" alt="Private Tasting Events" loading="lazy" />
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🥂</div>
+          <h3 class="card-title">Private Tasting Events</h3>
+          <p class="card-desc">Intimate guided tastings hosted at our maison or on location — paired with natural wines, craft beers and artisan charcuterie.</p>
+          <ul class="card-features">
+            <li>Expert maître fromager</li>
+            <li>Wine & cheese pairing</li>
+            <li>Up to 30 guests</li>
+          </ul>
+          <a href="../ServiceDetail/private.html" class="card-btn">Discover More <span class="btn-arrow">→</span></a>
+        </div>
+      </article>
+
+    
+      <article class="service-card reveal" data-delay="3">
+        <div class="card-img-wrap">
+          <img src="./Images/gift.jpg" alt="Corporate Gifting" loading="lazy" />
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🎁</div>
+          <h3 class="card-title">Corporate Gifting</h3>
+          <p class="card-desc">Impress clients and teams with luxury hampers featuring premium cheeses, cured meats and exclusive Maison Fromagerie condiments.</p>
+          <ul class="card-features">
+            <li>Custom branded packaging</li>
+            <li>Minimum 10 units</li>
+            <li>Nationwide delivery</li>
+          </ul>
+          <a href="../ServiceDetail/gifts.html" class="card-btn">Discover More <span class="btn-arrow">→</span></a>
+        </div>
+      </article>
+
+      
+      <article class="service-card reveal" data-delay="4">
+        <div class="card-img-wrap">
+          <img src="./Images/cheese-aging.jpg" alt="Aging Consultation" loading="lazy" />
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">📋</div>
+          <h3 class="card-title">Cheese Aging Consultation</h3>
+          <p class="card-desc">Our affinage experts advise restaurants and retailers on cellaring conditions, humidity control and optimal maturation timelines.</p>
+          <ul class="card-features">
+            <li>On-site cave assessment</li>
+            <li>Staff training sessions</li>
+            <li>Ongoing advisory retainer</li>
+          </ul>
+          <a href="../ServiceDetail/cheese.html" class="card-btn">Discover More <span class="btn-arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal" data-delay="5">
+        <div class="card-img-wrap">
+          <img src="./Images/monthly.jpg" alt="Monthly Subscription" loading="lazy" />
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">📦</div>
+          <h3 class="card-title">Monthly Subscription Box</h3>
+          <p class="card-desc">A curated monthly delivery of seasonal cheeses, artisan charcuterie and exclusive accompaniments — direct to your door.</p>
+          <ul class="card-features">
+            <li>3 curated varieties monthly</li>
+            <li>Free cold-chain delivery</li>
+            <li>Pause or cancel anytime</li>
+          </ul>
+          <a href="../ServiceDetail/monthly.html" class="card-btn">Discover More <span class="btn-arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="process-section" id="process">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">The Process</span>
+      <h2 class="section-title">How It <em>Works</em></h2>
+      <p class="section-desc">From first enquiry to final tasting — a seamless, pleasurable journey.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal" data-delay="0">
+        <div class="step-num">01</div>
+        <div class="step-line"></div>
+        <div class="step-icon">📞</div>
+        <h4>Enquire</h4>
+        <p>Tell us your occasion, party size and flavour preferences. We listen before we suggest.</p>
+      </div>
+      <div class="process-step reveal" data-delay="1">
+        <div class="step-num">02</div>
+        <div class="step-line"></div>
+        <div class="step-icon">✦</div>
+        <h4>Curate</h4>
+        <p>Our maître fromager selects and ages the perfect combination for your brief.</p>
+      </div>
+      <div class="process-step reveal" data-delay="2">
+        <div class="step-num">03</div>
+        <div class="step-line"></div>
+        <div class="step-icon">📦</div>
+        <h4>Deliver</h4>
+        <p>Cold-chain packed and dispatched or presented in person with full service notes.</p>
+      </div>
+      <div class="process-step reveal" data-delay="3">
+        <div class="step-num">04</div>
+        <div class="step-line"></div>
+        <div class="step-icon">🥂</div>
+        <h4>Savour</h4>
+        <p>Uncork, unwrap, and experience the flavours of Europe's finest terroirs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">What Guests Say</span>
+      <h2 class="section-title">Words of <em>Praise</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal" data-delay="0">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"The tasting event was the highlight of our anniversary weekend. Every cheese was extraordinary — each one told a story."</blockquote>
+        <div class="testi-author">
+          <div class="author-avatar">SC</div>
+          <div>
+            <strong>Sophie Cartier</strong>
+            <span>Private Client, Paris</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal featured" data-delay="1">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"Our corporate hampers arrived beautifully packaged and the feedback from clients was unanimous — Maison Fromagerie is the finest in the business."</blockquote>
+        <div class="testi-author">
+          <div class="author-avatar">MR</div>
+          <div>
+            <strong>Marc Renaud</strong>
+            <span>CEO, Renaud & Partners</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal" data-delay="2">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"The monthly subscription box is the gift that keeps giving. The variety, the notes, the packaging — all impeccable."</blockquote>
+        <div class="testi-author">
+          <div class="author-avatar">IL</div>
+          <div>
+            <strong>Isabelle Laurent</strong>
+            <span>Food Writer, Lyon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="awards-section" id="awards">
+  <div class="container">
+    <div class="awards-inner reveal">
+      <div class="award-item">
+        <div class="award-icon">🏆</div>
+        <strong>Best Fromagerie</strong>
+        <span>Gault & Millau 2023</span>
+      </div>
+      <div class="award-divider"></div>
+      <div class="award-item">
+        <div class="award-icon">⭐</div>
+        <strong>4.9 / 5 Rating</strong>
+        <span>2,400+ verified reviews</span>
+      </div>
+      <div class="award-divider"></div>
+      <div class="award-item">
+        <div class="award-icon">🌍</div>
+        <strong>12 Countries</strong>
+        <span>Sourcing partnerships</span>
+      </div>
+      <div class="award-divider"></div>
+      <div class="award-item">
+        <div class="award-icon">🌿</div>
+        <strong>Carbon Neutral</strong>
+        <span>Certified since 2021</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="cta">
+  <div class="cta-bg-pattern"></div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <span class="section-eyebrow">Stay In The Know</span>
+      <h2 class="cta-title">Join the <em>Maison</em></h2>
+      <p>Receive seasonal arrivals, exclusive offers and expert pairing guides directly to your inbox.</p>
+      <form class="cta-form" id="ctaForm" novalidate>
+        <div class="cta-input-wrap">
+          <input type="email" placeholder="Your email address" aria-label="Email address" required />
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </div>
+        <p class="cta-fine">No spam. Unsubscribe at any time.</p>
+      </form>
+    </div>
+  </div>
+</section>
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-rule"></div>
+    <div class="footer-newsletter">
+      <div class="footer-newsletter__copy">
+        <p class="footer-newsletter__eyebrow">The Affinage Letter</p>
+        <h2 class="footer-newsletter__heading">Seasonal finds, pairings &amp; stories from the cave.</h2>
+      </div>
+      <form class="footer-newsletter__form" onsubmit="return false;">
+        <input class="footer-newsletter__input" type="email" placeholder="your@email.com" aria-label="Email address"
+          autocomplete="email" />
+        <button class="footer-newsletter__btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-brand__logo">
+          <span class="footer-brand__icon">⬡</span>
+          <span class="footer-brand__wordmark">Maison <em>Fromagerie</em></span>
+        </a>
+        <p class="footer-brand__desc">Artisan cheeses and hand-crafted boards, sourced from small European dairies and
+          aged with care in our own caves since 2011.</p>
+      </div>
+      <nav>
+        <h3 class="footer-col__heading">Quick Links</h3>
+        <ul class="footer-col__links">
+          <li><a href="../index.html">Home 1</a></li>
+          <li><a href="../home2/home2.html">Home 2</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../Services/service.html">Services</a></li>
+          <li><a href="../Blog/blog.html">Blog</a></li>
+          <li><a href="../Contact/contact.html#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <nav>
+        <h3 class="footer-col__heading">Clients</h3>
+        <ul class="footer-col__links">
+          <li><a href="../auth/dashboard.html">Dashboard</a></li>
+          <li><a href="../auth/404.html">404 page</a></li>
+          <li><a href="../auth/comingsoon.html">Coming soon</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3 class="footer-col__heading">Visit Us</h3>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Artisanal Cheese And Charcuterie Company<br />Hyderabad</span>
+        </div>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <span>Mon–Fri 9am – 7pm<br />Sat 9am – 5pm · Sun Closed</span>
+        </div>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <span><a  class="__cf_email__">cheese@gmail.com</a></span>
+        </div>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.72a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span>+91 9986745657</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-bottom__copy">&copy; 2025 Maison <span>Fromagerie</span>. All rights reserved.</p>
+      <ul class="footer-bottom__links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+         <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../global-js/navbar.js"></script>
+  <script src="./service.js"></script>
+
+</body>
+</html>

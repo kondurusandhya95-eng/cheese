@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Fromagerie — Dashboard</title>
+<!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../auth/dashboard.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <a href="../index.html" class="logo"><span class="logo-icon">⬡</span> Maison<em> Fromagerie</em></a>
+
+    <nav>
+      <a class="active">Dashboard</a>
+      <a>Orders</a>
+      <a>Customers</a>
+      <a>Products</a>
+      <a>Analytics</a>
+      <a>Settings</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <h1>Dashboard</h1>
+
+      <div class="top-actions">
+        <button id="themeToggle">🌙</button>
+
+        <div class="notif">🔔 <span class="badge">3</span></div>
+
+        <div class="profile">
+          <img src="https://i.pravatar.cc/40" />
+        </div>
+      </div>
+    </header>
+
+    <section class="stats">
+      <div class="card">
+        <h3>Sales</h3>
+        <p class="count" data-target="12450">0</p>
+      </div>
+      <div class="card">
+        <h3>Orders</h3>
+        <p class="count" data-target="320">0</p>
+      </div>
+      <div class="card">
+        <h3>Customers</h3>
+        <p class="count" data-target="1200">0</p>
+      </div>
+      <div class="card">
+        <h3>Revenue</h3>
+        <p class="count" data-target="8920">0</p>
+      </div>
+    </section>
+
+    <section class="chart-card">
+      <h3>Sales Analytics</h3>
+      <canvas id="chart"></canvas>
+    </section>
+<section class="table-card">
+  <div class="card-header">
+    <h3>Recent Orders</h3>
+    <button class="btn-sm">View All</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Customer</th>
+        <th>Status</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>#1023</td>
+        <td>Emma</td>
+        <td><span class="status success">Completed</span></td>
+        <td>€120</td>
+      </tr>
+      <tr>
+        <td>#1024</td>
+        <td>Lucas</td>
+        <td><span class="status pending">Pending</span></td>
+        <td>€80</td>
+      </tr>
+      <tr>
+        <td>#1025</td>
+        <td>Sophia</td>
+        <td><span class="status cancel">Cancelled</span></td>
+        <td>€60</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<div class="bottom-grid">
+
+  <div class="card">
+    <h3>Recent Activity</h3>
+
+    <div class="activity">
+      <p>🧀 New order placed</p>
+      <span>2 mins ago</span>
+    </div>
+
+    <div class="activity">
+      <p>👤 New customer joined</p>
+      <span>10 mins ago</span>
+    </div>
+
+    <div class="activity">
+      <p>💰 Payment received</p>
+      <span>30 mins ago</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Top Products</h3>
+
+    <div class="product">
+      <span>Brie Cheese</span>
+      <div class="progress"><div style="width:80%"></div></div>
+    </div>
+
+    <div class="product">
+      <span>Cheese Hamper</span>
+      <div class="progress"><div style="width:60%"></div></div>
+    </div>
+
+    <div class="product">
+      <span>Wine Pairing</span>
+      <div class="progress"><div style="width:40%"></div></div>
+    </div>
+
+  </div>
+
+</div>
+
+  </main>
+
+</div>
+
+<script src="../auth/dashboard.js"></script>
+</body>
+</html>

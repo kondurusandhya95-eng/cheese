@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Fromagerie — Artisan Cheese &amp; Charcuterie</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../global-css/navbar.css" />
+   <link rel="stylesheet" href="./monthly.css">
+
+</head>
+<body>
+
+ <header class="navbar" id="navbar" role="banner">
+  <div class="nav-container">
+
+  
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">Maison <em>Fromagerie</em></span>
+    </a>
+
+    <ul class="nav-links" role="navigation" aria-label="Main navigation">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">Home <span class="arrow">▾</span></a>
+        <div class="dropdown-menu">
+          <a href="../index.html">Home 1</a>
+          <a href="../home2/home2.html">Home 2</a>
+        </div>
+      </li>
+
+      <li class="nav-item"><a href="../about/about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="../Services/service.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="../Blog/blog.html" class="nav-link">Blog</a></li>
+      <li class="nav-item"><a href="../Contact/Contact.html" class="nav-link">Contact</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="rtlToggle" class="rtl-btn">RTL</button>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+      <a href="../auth/signup.html" class="order-btn">Sign Up</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span class="ham-bar"></span>
+      <span class="ham-bar"></span>
+      <span class="ham-bar"></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="mob-accordion">
+    <button class="mob-acc-toggle" data-target="mob-home">
+      Home <span>▾</span>
+    </button>
+    <div class="mob-acc-body" id="mob-home">
+      <a href="../index.html">Home 1</a>
+      <a href="../home2/home2.html">Home 2</a>
+    </div>
+  </div>
+
+  <a href="../about/about.html" class="mob-link">About</a>
+  <a href="../Services/service.html" class="mob-link">Services</a>
+  <a href="../Blog/blog.html" class="mob-link">Blog</a>
+  <a href="../Contact/Contact.html" class="mob-link">Contact</a>
+  <a href="../auth/dashboard.html" class="mob-link">Dashboard</a>
+
+  <div class="mob-actions">
+    <button id="rtlToggle-mobile" class="rtl-btn">RTL</button>
+    <a href="../auth/signup.html" class="order-btn">Sign Up</a>
+  </div>
+
+</div>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<main>
+  <section class="hero-detail reveal">
+    <div class="container">
+      <div class="hero-nav-wrapper">
+        <a href="../index.html" class="btn-nav-small">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          Home
+        </a>
+        <a href="../Services/service.html" class="btn-nav-small">
+          Services
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">The Monthly Journey</span>
+          <h1>The Signature <em>Subscription</em> Box</h1>
+          <p>A masterfully curated exploration of the world's finest cave-aged selections, delivered directly to your doorstep. We source the peak of maturation so you can experience living history every month.</p>
+          <div class="hero-ctas" style="margin-bottom:2rem">
+            <a href="#categories" class="btn-primary">
+              Choose Your Tier
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#advisory" class="btn-ghost">Gift a Subscription</a>
+          </div>
+          <div class="hero-badge bounce-anim">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            <span>Voted #1 Gourmet Box 2024</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal-right">
+          <div class="hero-visual-img-wrap">
+            <img src="./Images/monthly.jpg"
+              alt="Premium Subscription Box Unboxing"
+          />
+            <div class="hero-img-pill">
+              <span class="hero-img-pill__num">4-6</span>
+              <span class="hero-img-pill__label">Artisanal<br/>Selections</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section categories reveal" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>The <em>Curation</em> Tiers</h2>
+        <p>Select the level of exploration that suits your palate. Each tier is designed to provide a cohesive sensory narrative through seasonal rotations.</p>
+      </div>
+      <div class="cat-grid">
+
+        <div class="cat-card hover-lift">
+          <div class="cat-img">
+            <img src="./Images/crackers.jpg"
+              alt="Discovery Subscription Box"
+           />
+          </div>
+          <div class="cat-card-body">
+            <h3>The Discovery Tier</h3>
+            <p>Perfect for those beginning their journey. Three accessible yet complex selections paired with a seasonal preserve and artisanal crackers.</p>
+            <a href="#" class="cat-card-link">
+              Subscribe Discovery
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="cat-card hover-lift">
+          <div class="cat-img">
+            <img src="./Images/rinds.jpg"
+              alt="Connoisseur Subscription Box"
+          />
+          </div>
+          <div class="cat-card-body">
+            <h3>The Connoisseur Tier</h3>
+            <p>A deeper dive into heritage rinds. Includes four rare cave-aged wheels, house-cured charcuterie, and a detailed technical tasting dossier.</p>
+            <a href="#" class="cat-card-link">
+              Subscribe Connoisseur
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="cat-card hover-lift">
+          <div class="cat-img">
+            <img src="./Images/library.jpg"
+              alt="Grand Reserve Subscription Box"
+           />
+          </div>
+          <div class="cat-card-body">
+            <h3>The Grand Reserve</h3>
+            <p>The ultimate monthly indulgence. Five monumental selections, including limited-release library wheels and exclusive sommelier-paired accompaniments.</p>
+            <a href="#" class="cat-card-link">
+              Subscribe Grand Reserve
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="section terroir reveal" id="terroir">
+    <div class="container grid-split">
+      <div class="split-visual reveal-left">
+        <img src="./Images/parcel.jpg"
+          alt="Bespoke box packaging" class="rounded-img shadow-lg"
+         />
+      </div>
+      <div class="split-text reveal-right">
+        <span class="eyebrow">Philosophy</span>
+        <h2>The <em>Seasonal</em> Hypothesis</h2>
+        <p>We apply the "Pasture-to-Parcel" synchronisation theory. Each box is a liquid record of the specific season, delivered to you at the exact moment of flavor peak.</p>
+        <p>We don't just ship products; we ship stories. Each month, we visit our 18 partner family dairies to select the specific wheels that will represent that month's narrative.</p>
+        <ul class="feature-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Temperature-controlled overnight shipping
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7z"/></svg>
+            Eco-conscious insulated packaging
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Flexible "Pause or Cancel" policy
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Exclusive member-only shop access
+          </li>
+        </ul>
+        <a href="#" class="btn-primary">
+          How It Works
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section affinage reveal" id="affinage">
+    <div class="container">
+      <div class="glass-container">
+        <div class="section-header">
+          <h2>The Art of the <em>Arrival</em></h2>
+          <p>From our caves to your table, we maintain an unbroken chain of care. Every box is hand-packed in our Lyon studio to ensure absolute integrity.</p>
+        </div>
+        <div class="steps-row">
+          <div class="step-item">
+            <span class="step-num">01</span>
+            <h4>Curation</h4>
+            <p>Our Master Affineurs taste every batch, selecting only the wheels that have reached their peak microbial succession for that month's theme.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">02</span>
+            <h4>Preparation</h4>
+            <p>Items are hand-cut and vacuum-sealed in our climate-controlled facility, preserving the delicate moisture levels and aromatic profile.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">03</span>
+            <h4>Delivery</h4>
+            <p>Shipped in insulated, biodegradable liners with frozen gel packs. Your box arrives at the perfect temperature, ready for immediate service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-full reveal" id="gallery">
+    <div class="container" style="margin-bottom:clamp(24px,3.5vw,44px)">
+      <div class="section-header">
+        <span class="eyebrow">Unboxing</span>
+        <h2>The Monthly <em>Reveal</em></h2>
+        <p>A glimpse at the textures, the ribbons, and the carefully curated contents that our members receive every month.</p>
+      </div>
+    </div>
+    <div class="masonry-gallery">
+      <div class="m-item h-2">
+        <img src="./Images/open.jpg"
+          alt="Open subscription box" >
+        <div class="m-item__overlay"><span>View Box</span></div>
+      </div>
+      <div class="m-item">
+        <img src="./Images/wine.jpg"
+          alt="Wine and cheese pairing" />
+        <div class="m-item__overlay"><span>View Box</span></div>
+      </div>
+      <div class="m-item">
+        <img src="./Images/honey.jpg"
+          alt="Honey and accompaniments" />
+        <div class="m-item__overlay"><span>View Box</span></div>
+      </div>
+      <div class="m-item h-2">
+        <img src="./Images/studio.jpg"
+          alt="Aged wheels in studio" />
+        <div class="m-item__overlay"><span>View Box</span></div>
+      </div>
+      <div class="m-item">
+        <img src="./Images/graze.jpg"
+          alt="Grazing spread from box" />
+        <div class="m-item__overlay"><span>View Box</span></div>
+      </div>
+      <div class="m-item">
+        <img src="./Images/individual.jpg"
+          alt="Individual portions" />
+        <div class="m-item__overlay"><span>View Box</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pairings reveal" id="pairings">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Synergy</span>
+        <h2>Member <em>Privileges</em></h2>
+        <p>Your subscription is more than a box; it's a pass to an exclusive community of connoisseurs and artisans.</p>
+      </div>
+      <div class="pairing-row">
+
+        <div class="pair-card hover-lift">
+          <div class="pair-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2h10l1 7H6L7 2z"/><path d="M6 9c0 5 6 10 6 10s6-5 6-10"/></svg>
+          </div>
+          <h4>Tasting Dossiers</h4>
+          <p>Every box includes a hand-pressed technical guide detailing the microbial succession, flavor evolution, and recommended beverage pairings for every item.</p>
+          <span class="pair-card-note">Master fromager curated — monthly updated</span>
+        </div>
+
+        <div class="pair-card hover-lift">
+          <div class="pair-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+          </div>
+          <h4>Digital Masterclasses</h4>
+          <p>Access our monthly live-streamed tasting sessions. Learn the history and science of your box directly from our head affineurs and guest cheesemakers.</p>
+          <span class="pair-card-note">Exclusive to members — first Thursdays</span>
+        </div>
+
+        <div class="pair-card hover-lift">
+          <div class="pair-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6 2 2 6 2 10s3 7 7 10l3 2 3-2c4-3 7-6 7-10s-4-8-10-8z"/></svg>
+          </div>
+          <h4>Early Shop Access</h4>
+          <p>Receive 48-hour early access to limited-edition holiday drops and rare library wheels before they are released to the general public.</p>
+          <span class="pair-card-note">Priority fulfillment — 15% discount</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section advisory reveal" id="advisory">
+    <div class="container grid-split inv">
+      <div class="split-text reveal-left">
+        <span class="eyebrow">Expert Curation</span>
+        <h2>The <em>Curator's</em> Promise</h2>
+        <blockquote class="advisory-quote">
+          "A subscription box is a monthly education in the art of living well. It is a commitment to quality that rewards the curious palate with every delivery."
+        </blockquote>
+        <span class="advisory-sig">— Pierre Moreau, Head of Curation</span>
+        <p class="split-text p" style="font-size:.95rem;line-height:1.88;color:var(--text-body);margin-bottom:1.8rem">
+          Our curation team provides a technical dossier for every box, detailing the specific farm origin and flavor evolution of your specific selections. No impersonal menus—a living relationship between curator and subscriber.
+        </p>
+        <div class="advisory-credentials">
+          <div class="advisory-cred-item">
+            <span class="advisory-cred-num">12</span>
+            <span class="advisory-cred-label">Years of Curation</span>
+          </div>
+          <div class="advisory-cred-item">
+            <span class="advisory-cred-num">50k+</span>
+            <span class="advisory-cred-label">Boxes Delivered</span>
+          </div>
+          <div class="advisory-cred-item">
+            <span class="advisory-cred-num">4.9</span>
+            <span class="advisory-cred-label">Member Rating</span>
+          </div>
+        </div>
+        <a href="../Contact/Contact.html" class="btn-primary">
+          Gift a Subscription
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="split-visual reveal-right">
+        <div class="advisory-img-wrap shadow-lg">
+          <img src="./Images/curator.jpg"
+            alt="The subscription box curator"
+         />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section footer-cta reveal">
+    <div class="container">
+      <div class="cta-box shadow-lg">
+        <h2>Ready for the <em>Arrival?</em></h2>
+        <p>Join the waitlist for our next monthly dispatch. New memberships open on the 1st of every month at 10:00 AM.</p>
+        <form class="cta-form" onsubmit="handleSubscribe(event)">
+          <input type="email" placeholder="Your email address" required autocomplete="email" />
+          <button type="submit" class="btn-primary">Join the Waitlist</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-rule"></div>
+    <div class="footer-newsletter">
+      <div class="footer-newsletter__copy">
+        <p class="footer-newsletter__eyebrow">The Affinage Letter</p>
+        <h2 class="footer-newsletter__heading">Seasonal finds, pairings &amp; stories from the cave.</h2>
+      </div>
+      <form class="footer-newsletter__form" onsubmit="return false;">
+        <input class="footer-newsletter__input" type="email" placeholder="your@email.com" aria-label="Email address"
+          autocomplete="email" />
+        <button class="footer-newsletter__btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-brand__logo">
+          <span class="footer-brand__icon">⬡</span>
+          <span class="footer-brand__wordmark">Maison <em>Fromagerie</em></span>
+        </a>
+        <p class="footer-brand__desc">Artisan cheeses and hand-crafted boards, sourced from small European dairies and
+          aged with care in our own caves since 2011.</p>
+      </div>
+      <nav>
+        <h3 class="footer-col__heading">Quick Links</h3>
+        <ul class="footer-col__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <nav>
+        <h3 class="footer-col__heading">Clients</h3>
+        <ul class="footer-col__links">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">404 page</a></li>
+          <li><a href="#">Coming soon</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3 class="footer-col__heading">Visit Us</h3>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Artisanal Cheese And Charcuterie Company<br />Hyderabad</span>
+        </div>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <span>Mon–Fri 9am – 7pm<br />Sat 9am – 5pm · Sun Closed</span>
+        </div>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+              data-cfemail="c1a3aeafabaeb4b381aca0a8b2aeafa7b3aeaca0a6a4b3a8a4efa7b3">cheese@gmail.com</a></span>
+        </div>
+        <div class="footer-col__contact-item">
+          <svg class="footer-col__contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.72a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span>+91 9986745657</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-bottom__copy">&copy; 2025 Maison <span>Fromagerie</span>. All rights reserved.</p>
+      <ul class="footer-bottom__links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+         <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="../global-js/navbar.js"></script>
+  <script src="./monthly.js"></script>
+
+</body>
+</html>
